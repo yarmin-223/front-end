@@ -1,0 +1,259 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+
+
+.busqueda-container {
+    position: relative;
+    width: 600px; 
+    display: inline-block;
+}
+
+.busqueda {
+    border: 2px solid #ccc; 
+    border-radius: 20px;
+    padding: 12px;
+    outline: none;
+    width: 500px;
+    font-family: 'Inter', sans-serif; 
+    font-weight: bold;
+}
+
+.boton-buscar {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 13px;
+    background-color: #fff; 
+    color: #BC4B51; 
+    cursor: pointer;
+    outline: none;
+    width: 60px; 
+    font-family: 'Inter', sans-serif; 
+    font-weight: bold;
+
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #BC4B51;
+    padding: 10px;
+    text-align: center;
+}
+header h1 {
+    font-family: 'Jua', sans-serif; 
+    font-size: 100px; 
+    margin: 0; 
+    color:white;
+}
+footer {
+    background-color: #BC4B51;
+    padding: 5px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: white; 
+}
+.redes-sociales {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.redes-sociales a {
+    margin: 0 10px;
+    color: white; 
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.botones-navegacion {
+    margin-top: 10px;
+    display: inline-block;
+    /* justify-content: space-between; */
+    align-items: center;
+    text-align: center;
+}
+
+
+
+.contenido-gifs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px;
+    overflow-y: auto;
+    height: auto;
+    margin-bottom: 200px; /* Ajusta el margen inferior para evitar que el footer se sobreponga */
+}
+
+.gif {
+    margin: 10px;
+    text-align: center;
+    max-width: 200px; 
+    max-height: auto; 
+}
+
+.gif img {
+width: 100%;
+max-width: 100%; 
+border-radius: 10px;
+}
+
+.gif p {
+    margin: 5px 0;
+    max-width: 100%; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+.controls-paginate-container {
+    position: relative;
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 60px;
+    margin-top: 30px;
+}
+
+.previusPage {
+    border:1px;
+    border-radius: 20px;
+    padding: 13px;
+    border: 1px solid white;
+    color:white;
+    background-color: #BC4B51;
+    cursor: pointer;
+    outline: none;
+    font-family: 'Inter', sans-serif;
+    font-weight: bolder;
+    font-size: 14px;
+    width: 200px;
+    position: absolute;
+    left: 40%;
+}
+
+.nextPage {
+    border:1px;
+    border-radius: 20px;
+    padding: 13px;
+    border: 1px solid white;
+    color: #BC4B51;            
+    background-color: white;
+    cursor: pointer;
+    outline: none;
+    font-family: 'Inter', sans-serif;
+    font-weight: bolder;
+    font-size: 14px;
+    width: 200px;
+    position: absolute;
+    right: 40%;
+}
+
+.parrafo {
+    
+    font-family: 'Inter', sans-serif; 
+    font-weight: bold;
+    text-align: left;
+}
+
+
+@media (min-width: 350px) {
+    .busqueda {
+        width: 100%;
+        margin-left: -16px;
+    }
+
+    .busqueda-container {
+        width: 40%; 
+    }
+
+    .boton-buscar {
+        right: -45px;
+        width: 68px;
+    }
+
+    header h1 {
+        font-size: 100px; 
+    }
+
+}    
+
+@media (min-width: 412px) {
+    .busqueda {
+        width: 100%;
+        margin-left: -16px;
+    }
+
+    .busqueda-container {
+        width: 40%; 
+    }
+
+    .boton-buscar {
+        right: -45px;
+        width: 68px;
+    }
+
+    header h1 {
+        font-size: 100px; 
+    }
+    .previusPage {
+        left: 40%;
+    }
+
+    .nextPage {
+        right: 40%;
+    }
+}    
+@media (min-width: 360px) and (max-width: 411px) {
+    .previusPage {
+        left: 4%;
+        width: 175px;
+    }
+
+    .nextPage {
+        right: 7%;
+        width: 175px;
+    }
+}
+@media (min-width: 412px) and (max-width: 915PX) {
+    .previusPage {
+        left: 9%;
+        width: 175px;
+    }
+
+    .nextPage {
+        right: 12%;
+        width: 175px;
+    }
+}
+@media (min-width: 1032px) {
+    .previusPage {
+        left: 34.5%;
+        width: 175px;
+    }
+
+    .nextPage {
+        right: 34.5%;
+        width: 175px;
+    }
+}
+@media (min-width: 1832px) {
+    .previusPage {
+        left: 41.5%;
+        width: 175px;
+    }
+
+    .nextPage {
+        right: 41.5%;
+        width: 175px;
+    }
+}

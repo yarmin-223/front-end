@@ -1,0 +1,166 @@
+
+
+/*** YARMIN  ***/
+
+
+.contenedor {
+    background-color: #9EC1A3;
+    margin-left: -5px;
+}
+
+.titulobooking {
+    font-family: "League Gothic", sans-serif; /** en la user history no especifica que para la seccion de booking sea esta fuente pero es la que mas se parece segun yo **/
+    font-size: 40px;
+    color: #1f363d;
+}
+
+.divseccionbooking {
+    /* width: 100%; */
+    background-color: #9EC1A3;
+    /* border: 4px solid black; */
+  
+}
+
+.seccionbooking {
+    padding: 200px 60px;
+    justify-content: left;
+    align-items: start;
+    display: grid;
+    grid-template-columns: 70% auto;
+}
+
+.botonBook {
+    padding: 15px;
+    color:white;
+    background-color: #1f363d;
+    cursor: pointer;
+    outline: none;
+    font-family: "Zilla Slab", serif;
+    font-weight: 400;
+    font-size: 16px;
+    border: 1px solid #1f363d;
+    font-style: normal;
+    margin-right: 20px;
+}
+
+.botonPortafolio {
+    padding: 15px;
+    color:#1f363d;
+    background-color: white;
+    cursor: pointer;
+    outline: none;
+    font-family: "Zilla Slab", serif;
+    font-weight: 400;
+    font-size: 16px;
+    border: 1px solid gainsboro;
+    font-style: normal;
+    margin-right: 20px;
+}
+
+#divTurno {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border: 2px solid #1f363d;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+    background-color: white !important;
+  }
+
+  .divBotonModal {
+    display: inline-block;
+  }
+
+/*** YARMIN  ***/
+
+
+
+/*** ROCIO  ***/
+.section_description{
+    padding: 200px 10px;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 70% auto;
+    background-image:  url(../media/background_description.jpg);
+    background-repeat: no-repeat;  /*** le agregue esto porque el fondo dependiendo de la resolucion se multiplicaba y se veia una ralla en el medio YARMIN  ***/
+}
+.aside_section_description{
+ background-color: aqua;
+}
+.aside_section_img{
+ background-color: bisque;
+}
+.p_section_description{
+    width: 60%;
+    font-family: "Zilla Slab", serif;
+    font-style: normal;
+}
+.human_3{
+    width: 173px; 
+    height: 258px;
+}
+.text_description{
+    font-family: "League Gothic", sans-serif;
+    font-size:35px;
+    padding: 50px 0px;
+}
+
+/* aca creo deberiamos compartir el media para no generar conflictos de responsive, agrego mi codigo con mi nombre y etiqueto el de rocio */
+@media screen and (max-width:600px){
+    /******** ROCIO **********/
+    .section_description{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        flex-direction: column-reverse;
+
+        justify-content: center;
+
+        }
+
+    .p_section_description{
+        width: 100%;
+        padding:10px 10px;
+        }
+    /******** ROCIO **********/
+
+    /******** YARMIN **********/
+
+    .botonBook {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    
+    .botonPortafolio {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .titulobooking {
+        font-size: 25px;
+    }
+
+    .seccionbooking {
+        width: 100%;
+    }
+    
+    .divseccionbooking {
+        width: 130%;
+        margin-left: -35px;
+    }
+
+    #divTurno {
+        top: 50%;
+        left: 40%;
+        padding: 50px;
+      }
+    
+
+    /******** YARMIN **********/
+        
+}
+/*** ROCIO  ***/
