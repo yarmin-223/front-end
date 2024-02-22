@@ -20,12 +20,13 @@
 }
 
 .seccionbooking {
-    padding: 200px 60px;
+    padding: 120px 60px;
     justify-content: left;
     align-items: start;
     display: grid;
     grid-template-columns: 70% auto;
 }
+
 
 .botonesweding {
     cursor: pointer;
@@ -51,21 +52,63 @@
     border: 1px solid gainsboro;
 }
 
+.inputfechareserva {
+    color:#1f363d;
+    background-color: white;
+    font-size: 16px;
+    border: 1px solid gainsboro;
+}
+
 #DivModalReserva {
     display: none;
     position: fixed;
     top: 50%;
-    left: 50%;
+    left: 40%;
     transform: translate(-50%, -50%);
     padding: 20px;
     border: 2px solid #1f363d;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     z-index: 9999;
     background-color: white !important;
+    width: 50%;
   }
 
   .divBotonModal {
     display: inline-block;
+  }
+  
+  
+    .secciontestimonios {
+        padding: 120px 60px;
+        justify-content: left;
+        align-items: start;
+        display: grid;
+        grid-template-columns: 30% auto;
+        display: inline-block;
+        text-align: center;
+    }
+
+    .contenedortestimonio {
+        max-width: 18%;
+        padding: 20px;
+        border-radius: 35px;
+        background-color: #8EB795;
+        text-align: center;
+        display: inline-block;
+        margin-right: 2%;
+        max-height: 50%;
+    }
+
+  .imgtestimonio {
+    width: 100%;
+  }
+
+  .parrafotestimonio {
+    text-align: left;
+    margin-top: 30px;
+    font-family: "Zilla Slab", serif;
+    font-style: normal;
+    font-size: 14px;
   }
 
 /*** YARMIN  ***/
@@ -134,6 +177,13 @@
         margin-bottom: 15px;
     }
 
+    .inputfechareserva {
+        width: 88%;
+        margin-bottom: 15px;
+    }
+
+    
+
     .titulobooking {
         font-size: 25px;
     }
@@ -153,6 +203,10 @@
         padding: 50px;
       }
     
+    .contenedortestimonio {
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
 
     /******** YARMIN **********/
         
