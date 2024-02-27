@@ -1,4 +1,14 @@
+ @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap'); /* suyay */
 
+ /* martina */
+:root{
+    --gris10: #666666;
+    --gris20:#252525;
+    --gris-azulado:#1F363D;
+    --verde10:#9EC1A3;
+    --verde20:#8EB795;
+}
+/* martina */
 
 /*** YARMIN  ***/
 
@@ -86,6 +96,7 @@
         grid-template-columns: 30% auto;
         display: inline-block;
         text-align: center;
+        box-sizing:content-box !important;
     }
 
     .contenedortestimonio {
@@ -97,6 +108,7 @@
         display: inline-block;
         margin-right: 2%;
         max-height: 50%;
+        box-sizing:content-box !important;
     }
 
   .imgtestimonio {
@@ -111,6 +123,56 @@
     font-size: 14px;
   }
 
+  .claselimitador {
+    height: 2px;
+    background-color: #8EB795;
+    border: none;
+  }
+
+
+  .seccionHeaderImg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+    .contenedor-titulos {
+        text-align: center;
+        max-width: 100%; 
+        width: 100%;
+        margin: auto; 
+    }
+
+    .imagenes-titulos {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        max-width: 100%; 
+        margin-bottom: 20px;
+    }
+
+    .imagen {
+        max-width: 45%; 
+    }
+
+    .titulo-grande {
+        font-family:"Inter", sans-serif;
+        font-size: 3.2em; 
+        margin: 0; 
+        color: #1f363d;
+    }
+
+    .subtitulo {
+        font-size: 2.2em; 
+        font-family:"Inter", sans-serif;
+        color: #1f363d;
+        position: relative;
+        bottom: -200px;
+        z-index: -1;
+    }
+    
 /*** YARMIN  ***/
 
 
@@ -145,6 +207,164 @@
     font-size:35px;
     padding: 50px 0px;
 }
+
+
+
+
+/* MARTINA*/
+
+.contenidoPrincipal{
+    background-color: var(--verde10);
+    color: var(--gris20);
+}
+
+.container {
+	width: 94%;
+	margin: 0 auto;
+    justify-content: center;
+}
+
+.service{
+    display:flex;
+    align-items:initial;
+    justify-content:space-around;  
+}
+.service img {
+    width: 173px; 
+    height: 258px;
+}
+
+.service-contenido{
+    display: block;
+    width: auto;
+}
+.service-contenido h3{
+    font-family: "League Gothic", sans-serif;
+    font-size: 30px;
+}
+.service-contenido p{
+    font-family: "Zilla Slab", serif;
+    padding: 10px 0px;
+}
+.service-list{
+    display: flex;
+	align-items: center;
+	justify-content: baseline;
+    padding: 0%; 
+}
+.service-items{
+    list-style: none;
+    display: inline;
+    margin-right: 20px;
+}
+
+hr{
+    margin: 0px;
+   
+}
+
+.footer{
+    background-color: var(--verde10);
+    color: var(--gris20);
+}
+.footer-contenedor{
+    display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.footer-list{
+    padding: 0%; 
+}
+.footer-items {
+    list-style: none;
+}
+.footer a{
+    text-decoration: none;
+    color: var(--gris20);
+    font-family: "Zilla Slab", serif;
+}
+.footer-copyright{
+    font-size: 13px;
+    text-align: center; 
+    padding-bottom: 20px;
+}
+
+/* MARTINA*/
+
+
+/* SUYAY*/
+  
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* suyay te quite el estilo del body que tenias porque ya lo agregue mas arriba*/
+
+/* aca esta clase la personalice para el header asi no afectamos el resto de controles li y a del resto del html */
+.header li, a {
+    font-family:"Inter", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #252525;
+    text-decoration: none;
+}
+
+
+
+.header{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px 5%;
+    background: #FFFFFF;
+}
+
+.nav_links{
+    list-style: none;
+}
+
+.nav_links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.logo {
+    max-width: 30px;
+    height: auto;
+    margin-right: 20px;
+}
+summary{
+    cursor: pointer;
+  list-style: none;
+}
+
+.menu{
+    color:#252525;
+    display: none;
+}
+
+.dropdown_menu{
+    display: none;
+    position: absolute;
+    top: 85px;
+    height: 0;
+    width: 100%;
+    background: #FFFFFF;
+}
+
+.dropdown_menu.open{
+    height: 240px;
+}
+
+.dropdown_menu li{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+}
+
+/* SUYAY*/
 
 /* aca creo deberiamos compartir el media para no generar conflictos de responsive, agrego mi codigo con mi nombre y etiqueto el de rocio */
 @media screen and (max-width:600px){
@@ -190,6 +410,7 @@
 
     .seccionbooking {
         width: 100%;
+        box-sizing: content-box !important;
     }
     
     .divseccionbooking {
@@ -208,7 +429,65 @@
         margin-bottom: 30px;
     }
 
+    .contenedor-titulos {
+        margin-top: 30%;
+    }
+
+    .titulo-grande {
+        font-size: 1.2em;
+    }
+
+    .subtitulo {
+        bottom: -70px;
+        font-size: 1.2em;
+    }
+
+    .imagen {
+        max-width: 30%;
+    }
+
+    
     /******** YARMIN **********/
-        
+
+    /* MARTINA */
+    .service{
+        display: flex;
+        flex-direction: column;    
+     }
+     
+    .footer-contenedor{
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;    
+    }
+    /* MARTINA */
+
+
+    /* SUYAY */
+
+    .nav_links{
+        display: none;
+    }
+
+    .menu{
+        display: block;
+        position: absolute;
+        right: 2rem;
+        top:30px;
+    }
+
+    #imgMenuMobileAbierto{
+        display: block;
+        position: absolute;
+        right: 2rem;
+        top:30px;
+    }
+
+    .dropdown_menu{
+        display: block;
+        width: 84%;
+    }
+    
+    /* SUYAY */
 }
 /*** ROCIO  ***/
