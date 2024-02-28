@@ -2,6 +2,7 @@
 const apiKey = 'Fwi4wDd8EvLKL0g4JCVrJO3SOZeBw8nL';
 const limit = 15;  // la api de gift tiene un tope de 50 ojo
 
+
 const apitendencia = 'https://api.giphy.com/v1/gifs/trending?api_key=' + apiKey + '&limit=' + limit;
 
 const apidebusqueda = 'https://api.giphy.com/v1/gifs/search?api_key=' + apiKey + '&limit=' + limit + '&q=';
